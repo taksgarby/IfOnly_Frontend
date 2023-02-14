@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CountrySelect from "./CountnrySelect";
+import CountrySelect from "./CountrySelect";
 import IndustryTypeSelect from "./IndustryTypeSelect";
 
 const SelectContainer = styled.div`

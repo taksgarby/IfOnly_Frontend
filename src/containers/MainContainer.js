@@ -33,6 +33,8 @@ const MainContainer = () => {
                     exact
                     element={<Home ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks} />}
                 />
+                 <Route path="usa" exact element={<USA />} />
+                
             </Routes>
         </Router>
         </>

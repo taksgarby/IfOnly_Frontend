@@ -30,6 +30,7 @@ const MainContainer = () => {
         ifOnlyStocks.find((ifOnlyStock) => ifOnlyStock.industryType === industryType);
     }
 
+
     return ( 
         <>
         <Router>

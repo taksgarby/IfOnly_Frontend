@@ -4,9 +4,7 @@ import CountrySelect from "./CountrySelect";
 import IndustryTypeSelect from "./IndustryTypeSelect";
 
 const SelectContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justfity-content: center;
+   
     gap: 3rem;
     margin: 3rem;
 `
@@ -25,3 +23,7 @@ const Home = ({ ifOnlyStocks, setIfOnlyStocks}) => {
 }
  
 export default Home;
+
+ // display: flex;
+    // flex-wrap: wrap;
+    // justfity-content: center;

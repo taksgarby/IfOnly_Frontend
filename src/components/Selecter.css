@@ -1,0 +1,15 @@
+h5 {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+ul {
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+li {
+    color: gray;
+    list-style: none;
+    flex: auto;
+}

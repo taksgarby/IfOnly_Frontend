@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../components/Home";
+import USA from "../components/countries/USA";
+import UK from "../components/countries/UK";
+import Japan from "../components/countries/Japan";
+import Finance from "../components/industries/Finance";
+import Technology from "../components/industries/Technology";
+import Retail from "../components/industries/Retail";
 
 const MainContainer = () => {
 
@@ -34,7 +40,12 @@ const MainContainer = () => {
                     element={<Home ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks} />}
                 />
                  <Route path="usa" exact element={<USA />} />
-                
+                 <Route path="uk" exact element={<UK />} />
+                 <Route path="japan" exact element={<Japan />} />
+                 <Route path="technology" exact element={<Technology />} />
+                 <Route path="finance" exact element={<Finance />} />
+                 <Route path="retail" exact element={<Retail />} />
+         
             </Routes>
         </Router>
         </>

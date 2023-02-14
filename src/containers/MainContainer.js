@@ -42,12 +42,12 @@ const MainContainer = () => {
                     exact
                     element={<Home ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks} />}
                 />
-                 <Route path="usa" exact element={<USA />} />
-                 <Route path="uk" exact element={<UK />} />
-                 <Route path="japan" exact element={<Japan />} />
-                 <Route path="technology" exact element={<Technology />} />
-                 <Route path="finance" exact element={<Finance />} />
-                 <Route path="retail" exact element={<Retail />} />
+                 <Route path="usa" exact element={<USA ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks}/>} />
+                 <Route path="uk" exact element={<UK ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks}/>} />
+                 <Route path="japan" exact element={<Japan ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks}/>} />
+                 <Route path="technology" exact element={<Technology ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks}/>} />
+                 <Route path="finance" exact element={<Finance ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks}/>} />
+                 <Route path="retail" exact element={<Retail ifOnlyStocks={ifOnlyStocks} setIfOnlyStocks={ifOnlyStocks}/>} />
          
             </Routes>
         </Router>

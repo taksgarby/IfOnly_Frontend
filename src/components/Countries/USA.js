@@ -1,21 +1,18 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import "./CountryResult.css";
 
 
 const USA = ({ifOnlyStocks}) => {
 
-    const ListWrapper = styled.div`
-        color: blue;
-        padding: 1rem;
-    `
+
 
     const USAlist = ifOnlyStocks.map((stock, id) => {
         if(stock.country === "USA") {
             return (
-            <ListWrapper key ={id}>    
-            {stock.companyName}
-            </ListWrapper>
+            <ul key ={id} className = "result-list">    
+            <li className="result-item">{stock.companyName}</li>
+            </ul>
             )    
         }
     })

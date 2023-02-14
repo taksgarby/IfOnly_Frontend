@@ -1,0 +1,21 @@
+h3 {
+    font-size: 1.5rem;
+    color: gray;
+    margin: 4rem;
+}
+
+.result-list {
+    margin-top: 3rem;
+    display: flex;
+}
+
+.result-item  {
+    color: blue;
+    list-style: none;
+    flex: auto;
+    font-size: 1.5rem;
+}
+
+
+
+  

@@ -7,6 +7,7 @@ import Japan from "../components/countries/Japan";
 import Finance from "../components/industries/Finance";
 import Technology from "../components/industries/Technology";
 import Retail from "../components/industries/Retail";
+import Header from "../components/Header";
 
 const MainContainer = () => {
 
@@ -33,6 +34,7 @@ const MainContainer = () => {
 
     return ( 
         <>
+        <Header />
         <Router>
             <Routes>
                 <Route 

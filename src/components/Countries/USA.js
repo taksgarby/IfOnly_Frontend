@@ -35,7 +35,7 @@ const USA = ({ifOnlyStocks}) => {
             <li className="result-item">{stock.companyName}
             {/* <button>ShowModal</button> <Modal /> */}
             <Button text="If Only..." value={stock.companyName} onClick={()=>setShow(true)}>
-            </Button><Modal onClose={()=>setShow(false)} show={show}/>
+            </Button><Modal onClose={()=>setShow(false)} show={show} ifOnlyStocks={ifOnlyStocks}/>
             </li>
             </ul>
             )    

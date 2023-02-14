@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./CountryResult.css";
-
+import Button from "../reusable/Button";
 
 const USA = ({ifOnlyStocks}) => {
 
@@ -11,7 +11,7 @@ const USA = ({ifOnlyStocks}) => {
         if(stock.country === "USA") {
             return (
             <ul key ={id} className = "result-list">    
-            <li className="result-item">{stock.companyName}</li>
+            <li className="result-item">{stock.companyName}<Button text="If Only..."></Button></li>
             </ul>
             )    
         }

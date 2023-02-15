@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import "./Modal.css";
 
 
-const Modal = props => {
+const Modal = (props, {ifOnlyStocks}) => {
 
     if (!props.show) {
         return null
@@ -15,10 +15,14 @@ const Modal = props => {
                     <div className="modal-title">
                         <p>
                             If you had only invested in ...
+                            
                         </p>
                     </div>
                     <div className="modal-body">
-                        Modal content
+                        <p>Buying</p>
+                        <p>Selling</p>
+
+                        
                     </div>
                     <div className="modal-footer">
                         <button onClick ={props.onClose} className="button">Close</button>

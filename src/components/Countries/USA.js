@@ -8,23 +8,26 @@ import ReactDOM from 'react-dom/client';
 const USA = ({ifOnlyStocks}) => {
 
     const [show, setShow] = useState(false)
+    const [amount, setAmount] = useState("");
+    const [currency, setCurrency] = useState("")
 
-    function MoneyInput() {
-        return (
-          <form>
-            <label>Choose Amount:
-              <input type="number" />
-            </label>
-            <label>Choose Currency:
-              <select>
-                <option>USD</option>
-                <option>GBP</option>
-                <option>JPY</option>
-              </select>
-            </label>
-          </form>
-        )
-      }
+    // function MoneyInput() {
+    //     return (
+    //       <form>
+    //         <label>Choose Amount:
+    //           <input type="number" />
+    //         </label>
+    //         <label>Choose Currency:
+    //           <select currency={currency}>
+    //             <option>USD</option>
+    //             <option>GBP</option>
+    //             <option>JPY</option>
+    //           </select>
+    //         </label>
+    //         <button>Click</button>
+    //       </form>
+    //     )
+    //   }
       
       
 
@@ -45,7 +48,8 @@ const USA = ({ifOnlyStocks}) => {
     return (
         <>
         <h3>USA Stock List</h3>
-       <MoneyInput/>
+        <h4>If I had invested $1000 in ...</h4>
+       {/* <MoneyInput/> */}
         {USAlist}
         </>
 

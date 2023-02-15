@@ -15,11 +15,11 @@ body {
     box-sizing: inherit;
   }
   
-  .App {
+  /* .App {
     width: 90%;
     max-width: 700px;
     margin: 2em auto;
-  }
+  } */
   p.lorem-text {
     text-align: justify;
   }

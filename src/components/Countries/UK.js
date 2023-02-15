@@ -6,9 +6,10 @@ import { ModalContainer } from "../../containers/ModalContainer";
 import { Filler } from "../Modal/Filler";
 import NewModal from "../Modal/NewModal";
 
+
 const UK = ({ifOnlyStocks}) => {
 
-    const triggerText = 'Open Form';
+  const triggerText = 'Open Form';
    const onSubmit = (event) => {
    event.preventDefault(event);
    console.log(event.target.name.value);
@@ -33,7 +34,7 @@ const UK = ({ifOnlyStocks}) => {
     return (
         <>
         <h3>UK Stock List</h3>
-        <h4>If I had invested $1000 in ...</h4>
+
        {/* <MoneyInput/> */}
         {UKlist}
         </>
